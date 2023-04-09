@@ -1,1 +1,31 @@
 @import '~bootstrap/scss/bootstrap';
+
+@import './partials/header';
+
+@import './partials/welcome';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+img{
+    width: 100%;
+}
+
+ul,
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
