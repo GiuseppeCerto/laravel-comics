@@ -1,6 +1,6 @@
-.main_jumbo{
+  .main_jumbo{
     height: 320px;
-    background-image: url('../imgjumbotron.jpg');
+    background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -9,11 +9,12 @@
     background-color: rgba(28,28,28,255);
   }
 
-  .container{
+  .main_container{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     max-width: 1000px;
+    margin: 0 auto;
     font-size: 10px;
     font-weight: 100;
     padding-top: 40px;
@@ -22,8 +23,15 @@
     position: relative;
     justify-content: center;
   }
-  .card{
-    flex-basis: calc(100% / 6 - 53px / 6);
+  .card_comic{
+    width: calc(100% / 6 - 53px / 6);
+    margin: 10px 0 10px 0;
+  }
+
+  .card_title{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 7px;
   }
 
   .main_ticket{
@@ -39,7 +47,7 @@
   .main_button{
     background-color: rgba(2,130,249,255);
     padding: 10px 40px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     justify-self: center;
     margin-top: 20px;
@@ -49,6 +57,25 @@
     width: 150px;
   }
 
-  .card_title{
-    margin-top: 7px;
-  }
+  .merch_section{
+    background-color: rgba(2,130,249,255);
+    padding: 45px 0;
+    color: white;
+    font-size: 15px;
+}
+
+.menu_item_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.merch_item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.merch_item img{
+    width: 30px;
+}
